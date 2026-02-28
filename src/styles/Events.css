@@ -1,0 +1,194 @@
+/* Events Page Styling */
+.events-container {
+  width: 100%;
+}
+
+.events-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--dark-text);
+  margin-bottom: 3rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.event-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.event-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.event-card h3 {
+  color: var(--dark-text);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.event-description {
+  color: var(--light-text);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.event-date,
+.event-location {
+  color: var(--light-text);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.view-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.view-btn:hover {
+  background: #4f46e5;
+}
+
+/* Event Details */
+.event-details {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.event-details h2 {
+  color: var(--dark-text);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.booths-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.booth-card {
+  background: var(--light-bg);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.booth-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow);
+}
+
+.booth-card h4 {
+  color: var(--dark-text);
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.booth-card p {
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.booth-description {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.job-roles {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  border-left: 3px solid var(--primary-color);
+}
+
+.job-roles h5 {
+  color: var(--dark-text);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.job-roles ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.job-roles li {
+  color: var(--light-text);
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.job-roles li:before {
+  content: "▸ ";
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+.chat-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.chat-btn:hover {
+  background: #4f46e5;
+}
+
+.error {
+  background: #fee;
+  color: var(--danger-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .events-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .events-grid,
+  .booths-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-details {
+    padding: 1rem;
+  }
+}
